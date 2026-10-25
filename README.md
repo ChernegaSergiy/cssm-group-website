@@ -1,21 +1,19 @@
 # CSSM Group Website
 
-A single-page landing site for CSSM Group, a provider of digital solutions for modern companies. It is built from a Figma design: a hero section, a services overview, an "About Us" block, a footer, and a "Let's Start a Project" contact form in a modal window.
+The landing page of CSSM Group: a dark, monospace-driven site that shows what the company does, who is behind it, and how to start a project in one click.
 
 - **Plain HTML and CSS.** No framework and no build step. Open `index.html` and it works.
-- **[IBM Plex Mono](https://fonts.google.com/specimen/IBM+Plex+Mono).** The typeface from the design, loaded from Google Fonts.
-- **Responsive layout.** Designed at 1440 px and adapted for tablets and phones.
-- **Native `<dialog>` modal.** The contact form uses the built-in dialog element: it closes with the Escape key, the close button, or a click outside the form.
+- **[IBM Plex Mono](https://fonts.google.com/specimen/IBM+Plex+Mono).** One typeface across the whole page, loaded from Google Fonts.
+- **Responsive.** Designed at 1440 px and adapted for tablets and phones.
+- **Contact form in a native `<dialog>`.** It closes with Escape, the close button, or a click outside the form.
 
-## Sections
+## Screenshots
 
-| Section | Description |
-| :--- | :--- |
-| **Hero** | Headline, short pitch, and a **Contact Us** button that opens the form |
-| **Our Services** | Three cards: Web Development, UI/UX Design, Data Analytics |
-| **About Us** | Team photo and a short "Who We Are" text |
-| **Footer** | Quick links, contact details, and copyright |
-| **Modal form** | First name, last name, company, service, and message |
+| Hero | Services |
+| :---: | :---: |
+| ![Hero](docs/images/01-hero.png) | ![Services](docs/images/02-services.png) |
+| **About Us** | **Contact form** |
+| ![About Us](docs/images/03-about.png) | ![Contact form](docs/images/04-contact-form.png) |
 
 ## Project layout
 
@@ -23,6 +21,8 @@ A single-page landing site for CSSM Group, a provider of digital solutions for m
 cssm-group-website/
 +-- index.html                  # Page markup and the modal form script
 +-- style.css                   # All styles and responsive rules
++-- docs/
+|   \-- images/                 # Screenshots for this README
 \-- images/
     +-- hero.png                # Hero background
     \-- about.jpg               # Photo for the "About Us" section
@@ -51,8 +51,6 @@ The site is fully static, so it can be hosted on any static hosting service, suc
 
 - **Colors and spacing.** The main colors and the side padding are CSS variables at the top of `style.css` (`:root`).
 - **Images.** Replace `images/hero.png` and `images/about.jpg` with your own files of the same name, or change the paths in `style.css`.
-- **Contact form.** The form currently shows a confirmation message and does not send data anywhere. To receive messages, connect it to your backend or a form service in the `submit` handler at the bottom of `index.html`.
-- **Navigation.** The **Industries** and **Insights** links point to `#industries` and `#insights`, which do not exist yet. Add sections with these ids or remove the links.
 
 ## Contributing
 

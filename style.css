@@ -101,7 +101,7 @@ h2 { font-weight: 400; font-size: 40px; line-height: 52px; text-align: center; }
 dialog {
   margin: auto; width: min(1240px, calc(100% - 32px));
   background: var(--bg); color: var(--text);
-  border: 1px solid var(--blue);
+  border: 0;
   padding: 60px;
 }
 dialog::backdrop { background: rgba(0, 0, 0, .7); }

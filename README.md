@@ -19,13 +19,11 @@ The landing page of CSSM Group: a dark, monospace-driven site that shows what th
 
 ```text
 cssm-group-website/
-+-- index.html                  # Page markup and the modal form script
-+-- style.css                   # All styles and responsive rules
-+-- docs/
-|   \-- images/                 # Screenshots for this README
++-- index.html     # Page markup and the modal form script
++-- style.css      # All styles and responsive rules
 \-- images/
-    +-- hero.png                # Hero background
-    \-- about.jpg               # Photo for the "About Us" section
+    +-- hero.png   # Hero background
+    \-- about.jpg  # Photo for the "About Us" section
 ```
 
 ## Local development
